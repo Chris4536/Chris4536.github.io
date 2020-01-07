@@ -1,0 +1,130 @@
+<html>
+ <head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="chris.css"/>
+	<title>
+		Website
+	</title>
+	
+ </head>
+	<body style="background-color: aqua;">
+		<p id="demo2"> Having fun with strings</p>
+		<div style="background-color: purple;">
+		<h1 style="font-family: 'Oswald', sans-serif; font-size: 50; text-align: center;"><a href="blahs.html"><i>Chatting app</i></h1></a>
+		<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+		<script>
+			
+		task();
+		function task() {
+		var text = "Hello KSG School";
+		document.getElementById('demo2').
+		innerHTML = text. slice(0, 5) + " "
+		+ text.slice(10, 16);
+		// console.log("any variable") will print the text of var
+		
+		}
+		function myFunction() {
+			document.getElementById("demo").style.color = "red";
+		}
+		
+		var display = "";
+		
+		
+		
+		function buttonSeven(number) {
+		display = display + number;
+		document.getElementById("result").innerHTML = display;
+		}
+		
+	
+		
+		
+		
+		function getResult() {
+				number2 = parseInt(display);
+				document.getElementById("display").innerHTML = number1 + number2;
+		}
+		</script>
+		
+		<p style="font-family: 'Oswald', sans-serif;">The point of the app is to have fun with others through messaging and sending pictures.
+		It's mainly made for teens, but it's usability is for wide range of people. The plan is to combine the best parts of different programs.</p>
+		<h2 style="font-family: 'Oswald', sans-serif;">Bored and nothing to do?</h2></div>
+		<a href="#test">
+		<h3 style="font-family: 'Oswald', sans-serif;"> Special heading!</h3>
+		</a>
+		<p style="font-family: 'Oswald', sans-serif;">Its a good way to waste your time and have fun with other people who are bored like you.</p>
+		<a href="https://drive.google.com/drive/folders/1pUrFjnVIzek5TW3aau5u0ske5G0PjZtH">Open Drive!<a/>
+		<hr>
+		<a href="https://drive.google.com/drive/folders/1pUrFjnVIzek5TW3aau5u0ske5G0PjZtH?usp=sharing">
+		<img src="https://i.imgur.com/vggRZDO.jpg" width="500" height="500" /></a>
+		<img src="https://i.imgur.com/jXmNApH.jpg" width="500" height="500"/>
+		<img src="https://i.imgur.com/Y39TN8f.jpg" width="500" height="500"/>
+		<br>
+		<!-- This is a comment
+		<!-- This
+		is still a comment
+		-->
+		<hr>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/t48Q9DMQY2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+		<hr>
+		<h3 id="test"> A special heading!</h3>
+		<h2 style="font-family: 'Oswald', sans-serif;">Random</h2>
+		<p style="font-family: 'Oswald', sans-serif;">Identifying random people</p>
+		<table style="width:100%">
+		<table id="t01">
+	<tr>
+		<th>Features</th>
+		<th>Explanation</th> 
+		<th>How does it help?</th>
+	</tr>
+	<tr>
+		<td>Horizontal line</td>
+		<td>Adds a line that divides different parts</td>
+		<td>Helps to have better overview over the app</td>
+	</tr>
+	<tr>
+		<td>Font</td>
+		<td>Changes the style of the text</td>
+		<td>Makes the app more engaging and enjoyable to use</td>
+	</tr>
+	<tr>
+		<td>Headings</td>
+		<td>Creates headings</td>
+		<td>Helps understand information faster</td>
+	</tr>
+	</table>
+	<table style="width:100%">
+	<table id="t01">
+	<tr>
+		<th><button>c</button><th>
+		<th><button>/<button><th>
+	</tr>	
+	<tr>	
+		<td onclick="buttonSeven(this.innerHTML);">7</td>
+		<td onclick="buttonSeven(this.innerHTML);">8</td>
+		<td onclick="buttonSeven(this.innerHTML);">9</td>
+		<td><button>x</button></td>
+	</tr>	
+	<tr>	
+		<td onclick="buttonSeven(this.innerHTML);">4</td>
+		<td onclick="buttonSeven(this.innerHTML);">5</td>
+		<td onclick="buttonSeven(this.innerHTML);">6</td>
+		<td><button>-</button></td>
+	</tr>
+		
+		<td onclick="buttonSeven(this.innerHTML);">1</td>
+		<td onclick="buttonSeven(this.innerHTML);">2</td>
+		<td onclick="buttonSeven(this.innerHTML);">3</td>
+		<td><button>+</button></td>
+	</tr>
+	<tr>
+		<td><button>+/-</button></td>
+		<td onclick="buttonSeven(this.innerHTML);">0</td>
+		<td id="result" colspan="3">0</td>
+		<td><button>.</button></td>
+		<td onclick="getResult();">=</td>
+	</tr>
+	</table>	
+	</body>
+</html>
