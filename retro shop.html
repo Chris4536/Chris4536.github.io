@@ -1,4 +1,19 @@
 <html>
+<style>
+img {
+    width: 6%;
+    height: 6%;
+}
+.pic {
+   width: 5em;
+   height: 5em;
+}
+    	
+
+	
+	
+	</style>
+	
 <body>
 <h1>Retro shop</h1>
 <div id ="items"></div>
@@ -112,6 +127,11 @@ var items = [
             "price": 5.99
         }        
     ];
+	
+	var imageURL = document.createElement('img');
+	imageURL.src = items[index].imageURL;
+	imageURL.classname = "pic";
+	document.getElementById("blah" + index).appendChild(imageURL);
 	
 	var totalPrice = 0;
 	var itemsHTML = document.getElementById("items");
