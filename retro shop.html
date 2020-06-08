@@ -128,10 +128,19 @@ var items = [
         }        
     ];
 	
+	var div = document.createElement('div');
+	div.id = "blah" + index;
+	div.className = 'kastike'
+	document.getElementById("boxes").appendChild(div);
+	
+	
 	var imageURL = document.createElement('img');
 	imageURL.src = items[index].imageURL;
 	imageURL.classname = "pic";
 	document.getElementById("blah" + index).appendChild(imageURL);
+	
+	
+
 	
 	var totalPrice = 0;
 	var itemsHTML = document.getElementById("items");
