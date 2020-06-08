@@ -150,7 +150,8 @@ var items = [
 	
 	console.log(items);
 	for (var index = 0; index < items.length; index++) {
-	
+	     let item = items[index];
+		
 	var div = document.createElement('div');
 	div.id = "blah" + index;
 	div.className = 'kastike';
@@ -167,7 +168,7 @@ var items = [
 		
 		
 		
-	let item = items[index];
+	
 	
 	var title = document.createElement("p")
 	title.innerHTML = items[index].title;
