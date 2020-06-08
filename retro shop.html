@@ -140,16 +140,6 @@ var items = [
         }        
     ];
 	
-	var div = document.createElement('div');
-	div.id = "blah" + index;
-	div.className = 'kastike';
-	document.getElementById("boxes").appendChild(div);
-	
-	
-	var imageURL = document.createElement('img');
-	imageURL.src = items[index].imageURL;
-	imageURL.classname = "pic";
-	document.getElementById("blah" + index).appendChild(imageURL);
 	
 	
 
@@ -161,6 +151,22 @@ var items = [
 	console.log(items);
 	for (var index = 0; index < items.length; index++) {
 	
+	var div = document.createElement('div');
+	div.id = "blah" + index;
+	div.className = 'kastike';
+	document.getElementById("boxes").appendChild(div);
+	
+	
+	var imageURL = document.createElement('img');
+	imageURL.src = items[index].imageURL;
+	imageURL.classname = "pic";
+	document.getElementById("blah" + index).appendChild(imageURL);
+	
+		
+		
+		
+		
+		
 	let item = items[index];
 	
 	var title = document.createElement("p")
