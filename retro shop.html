@@ -1,8 +1,9 @@
 <html>
+<head>
 <style>
 img {
-    width: 6%;
-    height: 6%;
+    width: 50%;
+    height: 50%;
 }
 .pic {
    width: 5em;
@@ -25,13 +26,14 @@ img {
 }	
 	
 	</style>
-	
+	</head>
 <body>
 <h1>Retro shop</h1>
-<div id ="boxes" ; class="suurkastike">
+<div id="boxes" ; class="suurkastike" ;>
+</div>
 
 	
-<script src="retro shop.js" defer>
+<script>
 var items = [
         {
             "id": 0,
@@ -145,63 +147,33 @@ var items = [
 
 	
 	var totalPrice = 0;
-	var itemsHTML = document.getElementById("items");
-	var cart = [];
 	
-	console.log(items);
+	
+	
 	for (var index = 0; index < items.length; index++) {
-	     let item = items[index];
+        let item = items[index];
 		
 	var div = document.createElement('div');
 	div.id = "blah" + index;
-	div.className = 'kastike';
+	div.className = "kastike";
 	document.getElementById("boxes").appendChild(div);
 	
-	
-	var imageURL = document.createElement('img');
-	imageURL.src = items[index].imageURL;
-	imageURL.classname = "pic";
-	document.getElementById("blah" + index).appendChild(imageURL);
-	
-		
-		
-		
-		
-		
-	
-	
-	var title = document.createElement("p")
-	title.innerHTML = items[index].title;
-	document.body.appendChild(title);
-	console.log(items[index].title);
-	
-	var priceHTML = document.createElement("p");
-	priceHTML.innerHTML = items[index].price;
-	itemsHTML.appendChild(priceHTML);
-	
-	var addToCartHTML = document.createElement("button");
-	addToCartHTML.innerHTML = "Add";
-	addToCartHTML.addEventListener("click", function() {
-		console.log(item.price);
-		totalPrice = totalPrice + item.price;
-		console.log("Total is " + totalPrice);
-		
-		cart.push(item);
-		console.log(cart);
-		
-	});
-	
-	itemsHTML.appendChild(addToCartHTML);
-	
-	var removeFromCarHTML = document.createElement("button");
-	removeFromCarHTML.innerHTML = "Remove";
-	removeFromCarHTML.addEeventListener("click", function() {
-	totalPrice = totalPrice - item.price;
-	console.log("Total is " + totalPrice);
-	});
-	
-	itemsHTML.appendChild(removeFromCarHTML);
-	
+	var title = document.createElement('p');
+    title.innerHTML = items[index].title;
+    document.getElementById("blah" + index).appendChild(title);
+    
+    
+    var imageURL = document.createElement('img');
+    imageURL.src = items[index].imageURL;
+    imageURL.classname = "pic";
+    document.getElementById("blah" + index).appendChild(imageURL);
+    
+    
+    var priceHTML = document.createElement('p');
+    priceHTML.innerHTML = items[index].price;
+    document.getElementById("blah" + index).appendChild(priceHTML);
+    
+   
 	}
 	</script>
 </body>
