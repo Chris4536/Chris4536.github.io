@@ -1,155 +1,237 @@
+<!DOCTYPE html>
 <html>
- <head>
-	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="chris.css"/>
-	<title>
-		Website
-	</title>
-	
- </head>
-	<body style="background-color: aqua;">
-		<p id="demo2"> Having fun with strings</p>
-		<div style="background-color: purple;">
-		<h1 style="font-family: 'Oswald', sans-serif; font-size: 50; text-align: center;"><a href="blahs.html"><i>Chatting app</i></h1></a>
-		<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-		
-		
-		<script id="mcjs">
-		!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ca3339b7c868c4da1c157aa43/82782b73c1120c22c039efb17.js");
-			
-		task();
-		function task() {
-		var text = "Hello KSG School";
-		document.getElementById('demo2').
-		innerHTML = text. slice(0, 5) + " "
-		+ text.slice(10, 16);
-		// console.log("any variable") will print the text of var
-		
-		}
-		function myFunction() {
-			document.getElementById("demo").style.color = "red";
-		}
-		
-		var display = "";
-		
-		
-		
-		function buttonSeven(number) {
-		display = display + number;
-		document.getElementById("result").innerHTML = display;
-		}
-		
-	
-		
-		
-		
-		function getResult() {
-				number2 = parseInt(display);
-				document.getElementById("display").innerHTML = number1 + number2;
-		}
-		</script>
-		
-		<p style="font-family: 'Oswald', sans-serif;">The point of the app is to have fun with others through messaging and sending pictures.
-		It's mainly made for teens, but it's usability is for wide range of people. The plan is to combine the best parts of different programs.</p>
-		<h2 style="font-family: 'Oswald', sans-serif;">Bored and nothing to do?</h2></div>
-		<a href="#test">
-		<h3 style="font-family: 'Oswald', sans-serif;"> Special heading!</h3>
-		</a>
-		<p style="font-family: 'Oswald', sans-serif;">Its a good way to waste your time and have fun with other people who are bored like you.</p>
-		<a href="https://drive.google.com/drive/folders/1pUrFjnVIzek5TW3aau5u0ske5G0PjZtH">Open Drive!<a/>
-		<hr>
-		<a href="https://drive.google.com/drive/folders/1pUrFjnVIzek5TW3aau5u0ske5G0PjZtH?usp=sharing">
-		<img src="https://i.imgur.com/vggRZDO.jpg" width="500" height="500" /></a>
-		<img src="https://i.imgur.com/jXmNApH.jpg" width="500" height="500"/>
-		<img src="https://i.imgur.com/Y39TN8f.jpg" width="500" height="500"/>
-		<br>
-		<!-- This is a comment
-		<!-- This
-		is still a comment
-		-->
-		<hr>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/t48Q9DMQY2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
-		<hr>
-		<h3 id="test"> A special heading!</h3>
-		<h2 style="font-family: 'Oswald', sans-serif;">Random</h2>
-		<p style="font-family: 'Oswald', sans-serif;">Identifying random people</p>
-		<table style="width:100%">
-		<table id="t01">
-	<tr>
-		<th>Features</th>
-		<th>Explanation</th> 
-		<th>How does it help?</th>
-	</tr>
-	<tr>
-		<td>Horizontal line</td>
-		<td>Adds a line that divides different parts</td>
-		<td>Helps to have better overview over the app</td>
-	</tr>
-	<tr>
-		<td>Font</td>
-		<td>Changes the style of the text</td>
-		<td>Makes the app more engaging and enjoyable to use</td>
-	</tr>
-	<tr>
-		<td>Headings</td>
-		<td>Creates headings</td>
-		<td>Helps understand information faster</td>
-	</tr>
-	</table>
-	<table style="width:100%">
-	<table id="t01">
-	<tr>
-		<th><button>c</button><th>
-		<th><button>/<button><th>
-	</tr>	
-	<tr>	
-		<td onclick="buttonSeven(this.innerHTML);">7</td>
-		<td onclick="buttonSeven(this.innerHTML);">8</td>
-		<td onclick="buttonSeven(this.innerHTML);">9</td>
-		<td><button>x</button></td>
-	</tr>	
-	<tr>	
-		<td onclick="buttonSeven(this.innerHTML);">4</td>
-		<td onclick="buttonSeven(this.innerHTML);">5</td>
-		<td onclick="buttonSeven(this.innerHTML);">6</td>
-		<td><button>-</button></td>
-	</tr>
-		
-		<td onclick="buttonSeven(this.innerHTML);">1</td>
-		<td onclick="buttonSeven(this.innerHTML);">2</td>
-		<td onclick="buttonSeven(this.innerHTML);">3</td>
-		<td><button>+</button></td>
-	</tr>
-	<tr>
-		<td><button>+/-</button></td>
-		<td onclick="buttonSeven(this.innerHTML);">0</td>
-		<td id="result" colspan="3">0</td>
-		<td><button>.</button></td>
-		<td onclick="getResult();">=</td>
-	</tr>
-	</table>	
-		<form action="action_page.php" style="border:1px solid #ccc">
- 		<div class="container">
-    		<h1>Sign Up</h1>
-    	<p>Please fill in this form to create an account.</p>
-    	<hr>
-
-    	<label for="email"><b>Email</b></label>
-   	 <input type="text" placeholder="Enter Email" name="email" required>
-
-    	
-
-    	<label>
-     	 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    	</label>
-
-    	<p>By creating an account you agree to my <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-    	<div class="clearfix">
-      	<button type="button" class="cancelbtn">Cancel</button>
-      	<button type="submit" class="signupbtn">Sign Up</button>
-    	</div>
-  	</div>
-	</form>
-		</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search..">
+</div>
+<div style="padding-left:16px">
+    
+    <div class="form">
+      <li><a href="#">#general</a></li>
+      <li><a href="#">#random</a></li>
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="sidenav">
+     <a href="#about">Profile</a>
+     <a href="#services">Friends</a>
+     <a href="#clients">Logout</a>
+    <a href="#contact">Support</a>
+</div>
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block"/>Get Starte
+          
+          </form>
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!--form -->
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Hello.</p>
+  <span class="time-right">11:00</span>
+</div>
+<div class="container darker">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="
+  <p>Hey! </p>
+  <span class="time-left">11:01</span>
+</div>
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Blah blah?</p>
+  <span class="time-right">11:02</span>
+</div>
+<div class="container darker">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="
+  <p>Blahblah blah!</p>
+  <span class="time-left">11:05</span>
+</div>
+    <script src="script.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js">
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytic
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBdCYydfTYfLjcRUUu5lsVM183tpp_t4TY",
+    authDomain: "phoneapp-3757a.firebaseapp.com",
+    projectId: "phoneapp-3757a",
+    storageBucket: "phoneapp-3757a.appspot.com",
+    messagingSenderId: "665480789641",
+    appId: "1:665480789641:web:ed3cdd959c5dae668f9058",
+    measurementId: "G-JRT9V67P9F"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  </body>
+</html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+/* Button for chat form */
+.open-button {
+  background-color: #555;
+  color: blue;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+/* popup chat */
+.chat-popup {
+  background-color: black;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+/* styles for container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: black;
+}
+/* textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #1b1f24;
+  resize: none;
+  min-height: 200px;
+}
+/* focus */
+.form-container textarea:focus {
+  background-color: #354e85;
+  outline: none;
+}
+/* style for send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+/* color for button app */
+.form-container .cancel {
+  background-color: red;
+}
+/* Hover effect */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<button class="open-button" onclick="openForm()">Chat</button>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textar
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Clos
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
 </html>
