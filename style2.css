@@ -133,22 +133,7 @@ html, body {
   height: 3em;
 }
 
-.dark-theme {
-  --background: black;
-  --color: white;
-  --header-background: #7acb76;
-  --input-background: black;
-  --button-background: #7acb76;
-  --button-alt-background: #dfe6ed;
-  --button-alt-color: white;
-  --button-color: white;
-  --a-color: var(--button-background);
-  --chat-bubble-color: white;
-  --chat-bubble-background: #dfe6ed;
-  --chat-bubble-mine-color:white;
-  --chat-bubble-mine-background: #7acb76;
-  /* dark theme */
-}
+
 
 .sidenav {
   width: 130px;
