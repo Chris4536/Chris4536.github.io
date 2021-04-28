@@ -2,8 +2,12 @@
 
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  padding: 0 20px;
   background-color: #354363;
   align-items: center;
+  text-align: center;
 }
 
 .topnav {
@@ -57,13 +61,7 @@ body {
 
 
 
-body {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 0 20px;
-  background-color: #354363;
-  align-items: center;
-}
+
 
 .container {
   border: 2px solid #dedede;
