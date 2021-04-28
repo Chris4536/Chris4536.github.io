@@ -175,6 +175,8 @@ html, body {
   color: #064579;
 }
 
+{box-sizing: border-box;}
+
 /* Button for chat form */
 .open-button {
   background-color: #555;
