@@ -9,6 +9,11 @@ const firebaseConfig = {
   measurementId: "G-QME7PVT2KG"
 };
 
+function loadChannels() {
+  database.collection("channels").orderBy("name")
+}
+
+
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
