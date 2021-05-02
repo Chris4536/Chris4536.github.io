@@ -1,13 +1,52 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDhzDUw_ukDp17V2aXXpH_Wu54Xzxr68CE",
-  authDomain: "chatapper-32e7c.firebaseapp.com",
-  projectId: "chatapper-32e7c",
-  storageBucket: "chatapper-32e7c.appspot.com",
-  messagingSenderId: "500187557839",
-  appId: "1:500187557839:web:c94de8f9bfe1ff54032cba",
-  measurementId: "G-QME7PVT2KG"
-};
+var feedbackHTML = document.getElementById("feedback");
+var authenticationHTML = document.getElementById("authentication");
+
+
+function signup() {
+
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      feedbackHTML.innerHTML = "Account created";
+      hideAuthentication();
+  })
+  .catch((error) => {
+    feedbackHTML.innerHTML = error.message;
+  });
+
+}
+
+function login() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    feedbackHTML.innerHTML = "Login success";
+    hideAuthentication();
+  })
+  .catch((error) => {
+    feedbackHTML.innerHTML = error.message;
+  });
+}
+
+function showAuthentication() {
+  authenticationHTML.style.display = "block";
+
+}
+
+function hideAuthentication() {
+  authenticationHTML.style.display = "none";
+}
+
+
+
+
+
+
 
 function loadChannels() {
   database.collection("channels").orderBy("name")
