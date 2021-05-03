@@ -20,7 +20,7 @@
       
 </div>
 
-      <div id="authentication">
+      <div id="screen-authentication">
     <p>Email</p>
     <input id ="email" autocomplete="off"></input>
     <p>Password</p>
@@ -30,18 +30,17 @@
     <p id="feedback"></p>
     </div>
     
+
+    <div id="screen-chat">
+
     <button onclick="showAuthentication();">Back</button>
+    <p>#General</p>
+    <input id="message-input" autocomplete="off"/>
+    
+    <button onclick="sendMessage();">Send</button>
+    <div id="messages"></div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-
-
-<div class="container">
-  <img src="https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png" alt="Avatar" style="width:100%;">
-  <p>Hello.</p>
-  <span class="time-right">11:00</span>
-</div>
+    </div>
 
 <div class="container darker">
   <img src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/avat-01-512.png" alt="Avatar" class="right" style="width:100%;">
@@ -75,22 +74,11 @@
   </form>
 </div>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-  apiKey: "AIzaSyDhzDUw_ukDp17V2aXXpH_Wu54Xzxr68CE",
-  authDomain: "chatapper-32e7c.firebaseapp.com",
-  projectId: "chatapper-32e7c",
-  storageBucket: "chatapper-32e7c.appspot.com",
-  messagingSenderId: "500187557839",
-  appId: "1:500187557839:web:c94de8f9bfe1ff54032cba",
-  measurementId: "G-QME7PVT2KG"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
 
     <script src="script.js"></script>
 
