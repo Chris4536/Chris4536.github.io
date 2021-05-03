@@ -4,6 +4,24 @@
   color: darksalmon;
 }
 
+#screen-chat {
+  display: none;
+
+}
+
+.message-container {
+  background-color: lightcyan;
+  margin: 0.5em;
+  padding: 0.25em;
+}
+
+.message-container p {
+  display: inline;
+  margin: 0.25em;
+}
+
+
+
 
 
 body {
