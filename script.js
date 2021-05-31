@@ -1,13 +1,12 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDhzDUw_ukDp17V2aXXpH_Wu54Xzxr68CE",
-  authDomain: "chatapper-32e7c.firebaseapp.com",
-  projectId: "chatapper-32e7c",
-  storageBucket: "chatapper-32e7c.appspot.com",
-  messagingSenderId: "500187557839",
-  appId: "1:500187557839:web:c94de8f9bfe1ff54032cba",
-  measurementId: "G-QME7PVT2KG"
-  
-};
+    apiKey: "AIzaSyAPpLwedBwEjocMbPG_iAF1dAXLgXUWkJE",
+    authDomain: "chatappv2-8047f.firebaseapp.com",
+    projectId: "chatappv2-8047f",
+    storageBucket: "chatappv2-8047f.appspot.com",
+    messagingSenderId: "869191893073",
+    appId: "1:869191893073:web:667ea1d9483ab0c24d7870",
+    measurementId: "G-R6C5H4PZ11"
+  };
 
 var fileInput = document.getElementById("file-input");
 var inputEmail = document.getElementById("input-email");
